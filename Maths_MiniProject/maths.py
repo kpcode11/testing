@@ -6,7 +6,7 @@ import os
 file_name = "random_trials.xlsx"
 
 # Number of trials
-num_trials = 200
+num_trials = 1000  # 1000 trials
 num_digits = 100  # Each trial has 100 random digits
 
 # Generate 200 trials of 100 one-digit numbers (0-9)
@@ -33,4 +33,4 @@ with pd.ExcelWriter(file_name) as writer:
     df_trials.to_excel(writer, sheet_name="Trials", index=False)
     df_freq.to_excel(writer, sheet_name="Frequency")
 
-print(f"Excel file '{file_name}' has been created with 200 trials!")
+print(f"Excel file '{file_name}' has been created with 1000 trials!")
